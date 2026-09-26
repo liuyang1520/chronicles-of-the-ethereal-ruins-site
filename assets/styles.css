@@ -36,6 +36,68 @@
   --font-serif: "Noto Serif SC", "Songti SC", "STSong", "Source Han Serif SC", SimSun, Georgia, serif;
 }
 
+[data-theme="light"] {
+  --void-deep: #ded7c6;
+  --void-night: #f6f0e4;
+  --void-surface: #ece4d4;
+  --void-card: #e2d9c5;
+  --void-card-hover: #d7cdb7;
+  --void-border: rgba(120, 95, 42, 0.28);
+  --void-border-bright: rgba(120, 95, 42, 0.55);
+
+  --gold: #7d6124;
+  --gold-bright: #523e12;
+  --gold-dim: #38290a;
+  --gold-glow: rgba(125, 97, 36, 0.18);
+
+  --jade: #276152;
+  --jade-bright: #1b453a;
+  --jade-dim: #112d26;
+  --jade-glow: rgba(39, 97, 82, 0.2);
+
+  --cinnabar: #b83626;
+  --cinnabar-bright: #942517;
+
+  --parchment: #fdfaf4;
+  --parchment-subtle: #ffffff;
+  --parchment-border: #d4c8b0;
+  --ink-black: #161e20;
+  --ink-faint: #475755;
+
+  --text-main: #182224;
+  --text-dim: #384a48;
+  --text-faint: #5c706e;
+}
+
+[data-theme="light"] .hero {
+  background:
+    radial-gradient(circle at 50% 25%, rgba(91, 168, 146, 0.18) 0%, transparent 60%),
+    linear-gradient(180deg, #dfd7c5 0%, #f6f0e4 45%, #ece3d2 80%, #dfd6c2 100%);
+}
+
+[data-theme="light"] .hero-copy h1 span {
+  background: linear-gradient(135deg, #7d6124 0%, #523e12 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[data-theme="light"] .languages-section {
+  background: #ede5d5;
+}
+
+[data-theme="light"] .document-hero {
+  background: linear-gradient(180deg, #ded7c6 0%, #f6f0e4 100%);
+}
+
+[data-theme="light"] .site-footer {
+  background: #ded7c6;
+}
+
+[data-theme="light"] .button-secondary {
+  background: rgba(236, 228, 212, 0.85);
+  color: var(--text-main);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -153,7 +215,62 @@ summary {
 .site-footer nav {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 24px;
+}
+
+.site-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--void-surface);
+  border: 1px solid var(--void-border);
+  color: var(--gold-bright);
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+  padding: 0;
+}
+
+.theme-toggle:hover {
+  background: var(--void-card);
+  border-color: var(--gold);
+  transform: rotate(18deg) scale(1.05);
+}
+
+.lang-select {
+  padding: 6px 8px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--gold-bright);
+  background: var(--void-surface);
+  border: 1px solid var(--void-border);
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.lang-select:hover,
+.lang-select:focus {
+  border-color: var(--gold);
+  background: var(--void-card);
+}
+
+.lang-select option {
+  background: var(--void-night);
+  color: var(--text-main);
 }
 
 .site-header nav a,

@@ -9,6 +9,7 @@
   <link rel="icon" href="../assets/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
   <link rel="stylesheet" href="../assets/styles.css">
+  <script>(function(){const t=localStorage.getItem('xianxia_theme')||(window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);})();</script>
 </head>
 <body class="document-page">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -17,163 +18,176 @@
     <a class="brand" href="../" aria-label="Chronicles of the Ethereal Ruins Home">
       <img class="brand-icon" src="../assets/icon-1024.png" alt="" width="42" height="42">
       <div class="brand-text">
-        <span class="brand-en">Chronicles of the Ethereal Ruins</span>
-        <span class="brand-zh">灵墟纪 · 东方修仙模拟器</span>
+        <span class="brand-en" data-i18n="brand.en">Chronicles of the Ethereal Ruins</span>
+        <span class="brand-zh" data-i18n="brand.zh">灵墟纪 · 东方修仙模拟器</span>
       </div>
     </a>
     <nav aria-label="Primary navigation">
-      <a href="../#cultivation">Cultivation</a>
-      <a href="../#realms">Realms</a>
-      <a href="../#languages">Languages</a>
-      <a href="./" aria-current="page">Privacy</a>
-      <a href="../support/">Support</a>
+      <a href="../#cultivation" data-i18n="nav.cultivation">Cultivation</a>
+      <a href="../#realms" data-i18n="nav.realms">Realms</a>
+      <a href="../#languages" data-i18n="nav.languages">Languages</a>
+      <a href="./" aria-current="page" data-i18n="nav.privacy">Privacy</a>
+      <a href="../support/" data-i18n="nav.support">Support</a>
     </nav>
+    <div class="site-controls">
+      <button class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">
+        <span class="theme-icon" aria-hidden="true">☀️</span>
+      </button>
+      <select class="lang-select" aria-label="Select language">
+        <option value="en">English</option>
+        <option value="zh-CN">简体中文</option>
+        <option value="zh-TW">繁體中文</option>
+        <option value="ja">日本語</option>
+        <option value="ko">한국어</option>
+        <option value="es">Español</option>
+      </select>
+    </div>
   </header>
 
   <main id="main">
     <header class="document-hero">
-      <p class="eyebrow">SANCTUM CODEX · OFFICIAL PRIVACY POLICY</p>
-      <h1>Privacy Policy</h1>
-      <p class="document-summary">
+      <p class="eyebrow" data-i18n="privacy.heroEyebrow">SANCTUM CODEX · OFFICIAL PRIVACY POLICY</p>
+      <h1 data-i18n="privacy.heroH1">Privacy Policy</h1>
+      <p class="document-summary" data-i18n="privacy.heroSummary">
         Chronicles of the Ethereal Ruins (《灵墟纪》) does not collect, transmit, sell, or share your personal data.
         Your cultivation journey remains entirely on your device.
       </p>
-      <div class="effective-date"><span>EFFECTIVE DATE</span>AUGUST 11, 2026</div>
+      <div class="effective-date"><span data-i18n="privacy.effectiveLabel">EFFECTIVE DATE</span><span data-i18n="privacy.effectiveDate">AUGUST 11, 2026</span></div>
     </header>
 
     <div class="document-layout">
       <aside class="document-index" aria-label="Table of contents">
-        <p>ON THIS PAGE</p>
+        <p data-i18n="privacy.tocHeading">ON THIS PAGE</p>
         <ol>
-          <li><a href="#overview">01. Overview</a></li>
-          <li><a href="#on-device">02. On-Device Save Data</a></li>
-          <li><a href="#notifications">03. Local Notifications</a></li>
-          <li><a href="#audio">04. Audio & Web Audio API</a></li>
-          <li><a href="#third-parties">05. Third Parties & SDKs</a></li>
-          <li><a href="#website">06. This Website</a></li>
-          <li><a href="#control">07. Your Control & Deletion</a></li>
-          <li><a href="#children">08. Children’s Privacy</a></li>
-          <li><a href="#changes">09. Changes to This Policy</a></li>
-          <li><a href="#contact">10. Contact & Support</a></li>
+          <li><a href="#overview" data-i18n="privacy.toc1">01. Overview</a></li>
+          <li><a href="#on-device" data-i18n="privacy.toc2">02. On-Device Save Data</a></li>
+          <li><a href="#notifications" data-i18n="privacy.toc3">03. Local Notifications</a></li>
+          <li><a href="#audio" data-i18n="privacy.toc4">04. Audio &amp; Web Audio API</a></li>
+          <li><a href="#third-parties" data-i18n="privacy.toc5">05. Third Parties &amp; SDKs</a></li>
+          <li><a href="#website" data-i18n="privacy.toc6">06. This Website</a></li>
+          <li><a href="#control" data-i18n="privacy.toc7">07. Your Control &amp; Deletion</a></li>
+          <li><a href="#children" data-i18n="privacy.toc8">08. Children’s Privacy</a></li>
+          <li><a href="#changes" data-i18n="privacy.toc9">09. Changes to This Policy</a></li>
+          <li><a href="#contact" data-i18n="privacy.toc10">10. Contact &amp; Support</a></li>
         </ol>
       </aside>
 
       <article class="policy-paper">
         <section id="overview">
           <span class="section-number">01</span>
-          <h2>Overview</h2>
-          <p>
+          <h2 data-i18n="priv.s1Title">Overview</h2>
+          <p data-i18n="priv.s1P1">
             <em>Chronicles of the Ethereal Ruins</em> (《灵墟纪》) is an offline-first, single-player Eastern ink cultivation simulation for iOS and modern Web browsers. It requires no user account, no email address, and connects to no external tracking servers.
           </p>
-          <p>
+          <p data-i18n="priv.s1P2">
             We believe an authentic cultivation experience requires tranquility and deep privacy. We do not collect personal information, gameplay telemetry, analytics, advertising identifiers (IDFA), precise location, or biometric data from the application.
           </p>
           <div class="plain-language">
-            <strong>IN PLAIN LANGUAGE</strong>
-            <p>No user accounts. No analytics tracking. No advertising SDKs. No telemetry. Zero personal data collected.</p>
+            <strong data-i18n="priv.s1CalloutTitle">IN PLAIN LANGUAGE</strong>
+            <p data-i18n="priv.s1CalloutP">No user accounts. No analytics tracking. No advertising SDKs. No telemetry. Zero personal data collected.</p>
           </div>
         </section>
 
         <section id="on-device">
           <span class="section-number">02</span>
-          <h2>Information Stored on Your Device</h2>
-          <p>
+          <h2 data-i18n="priv.s2Title">Information Stored on Your Device</h2>
+          <p data-i18n="priv.s2P1">
             To deliver persistent offline gameplay, <em>Chronicles of the Ethereal Ruins</em> saves your cultivation progress locally on your device:
           </p>
           <ul>
-            <li><strong>Cultivation State:</strong> Current realm tier (Qi Refinement through Void Tribulation), gathered spiritual Qi, insight, and vitality points.</li>
-            <li><strong>Inventory & Crafting:</strong> Spiritual stones, forged blades, alchemy herbs, pills, and inscribed talismans.</li>
-            <li><strong>World Progress:</strong> Explored regions (Qingya Peak, Lan Sea, Northern Wastes, Yunmeng Marsh, Ethereal Ruins), sect reputation, and completed story arcs.</li>
-            <li><strong>Preferences:</strong> Sound toggle, selected locale / language, and notification permission states.</li>
+            <li data-i18n="priv.s2Li1"><strong>Cultivation State:</strong> Current realm tier (Qi Refinement through Void Tribulation), gathered spiritual Qi, insight, and vitality points.</li>
+            <li data-i18n="priv.s2Li2"><strong>Inventory &amp; Crafting:</strong> Spiritual stones, forged blades, alchemy herbs, pills, and inscribed talismans.</li>
+            <li data-i18n="priv.s2Li3"><strong>World Progress:</strong> Explored regions (Qingya Peak, Lan Sea, Northern Wastes, Yunmeng Marsh, Ethereal Ruins), sect reputation, and completed story arcs.</li>
+            <li data-i18n="priv.s2Li4"><strong>Preferences:</strong> Sound toggle, selected locale / language, and notification permission states.</li>
           </ul>
-          <p>
+          <p data-i18n="priv.s2P2">
             This data is stored strictly in the app’s sandboxed local container on iOS (or HTML5 localStorage in the web version). We cannot access, retrieve, or inspect this information. It is never transmitted across the network.
           </p>
         </section>
 
         <section id="notifications">
           <span class="section-number">03</span>
-          <h2>Local Notifications</h2>
-          <p>
+          <h2 data-i18n="priv.s3Title">Local Notifications</h2>
+          <p data-i18n="priv.s3P1">
             With your explicit permission, the app schedules local notifications to alert you when an in-game meditation session concludes, when a sect mission is ready for claim, or when a breakthrough tribulation opportunity arises.
           </p>
-          <p>
+          <p data-i18n="priv.s3P2">
             These notifications are computed and scheduled <strong>entirely on your local device</strong> using Apple’s local notification framework. The app does not utilize remote Apple Push Notification servers (APNs), and no gameplay or device data is ever transmitted to external notification relays.
           </p>
-          <p>
+          <p data-i18n="priv.s3P3">
             You can grant, modify, or revoke notification permissions at any time within iOS <em>Settings &gt; Notifications &gt; 灵墟纪 (Chronicles of the Ethereal Ruins)</em>.
           </p>
         </section>
 
         <section id="audio">
           <span class="section-number">04</span>
-          <h2>Audio & Web Audio API</h2>
-          <p>
+          <h2 data-i18n="priv.s4Title">Audio &amp; Web Audio API</h2>
+          <p data-i18n="priv.s4P1">
             The game utilizes synthesized Web Audio and native procedural audio generation (such as Guqin plucks, bronze bells, sword slashes, and thunder claps). The game does not access your microphone, does not record ambient sound, and respects your device’s hardware Silent Mode switch.
           </p>
         </section>
 
         <section id="third-parties">
           <span class="section-number">05</span>
-          <h2>Third Parties & External SDKs</h2>
-          <p>
+          <h2 data-i18n="priv.s5Title">Third Parties &amp; External SDKs</h2>
+          <p data-i18n="priv.s5P1">
             <em>Chronicles of the Ethereal Ruins</em> contains no third-party marketing frameworks, no advertising SDKs, no behavioral trackers, and no external telemetry services.
           </p>
-          <p>
+          <p data-i18n="priv.s5P2">
             The game is completely ad-free and contains no in-app purchases or pay-to-win mechanisms.
           </p>
         </section>
 
         <section id="website">
           <span class="section-number">06</span>
-          <h2>This Website</h2>
-          <p>
+          <h2 data-i18n="priv.s6Title">This Website</h2>
+          <p data-i18n="priv.s6P1">
             This marketing website (hosted on GitHub Pages) is a collection of static HTML, CSS, and asset files. It sets no tracking cookies, uses no Google Analytics, and requires no login.
           </p>
-          <p>
-            Standard web server access logs (such as IP addresses and browser user-agent strings) may be generated by GitHub Inc. for security and infrastructure reliability in accordance with <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub's Privacy Statement</a>.
+          <p data-i18n="priv.s6P2">
+            Standard web server access logs may be generated by GitHub Inc. for security and infrastructure reliability in accordance with GitHub's Privacy Statement.
           </p>
         </section>
 
         <section id="control">
           <span class="section-number">07</span>
-          <h2>Your Control & Data Deletion</h2>
-          <p>
+          <h2 data-i18n="priv.s7Title">Your Control &amp; Data Deletion</h2>
+          <p data-i18n="priv.s7P1">
             Because all game progress resides exclusively on your local device:
           </p>
           <ul>
-            <li><strong>In-App Reset:</strong> You can wipe your save data at any time from the in-game Settings sheet by choosing "Reincarnate / Reset Save".</li>
-            <li><strong>Uninstalling the App:</strong> Deleting the app from your iOS device permanently purges all sandboxed save files, preferences, and local notifications in accordance with standard iOS behavior.</li>
+            <li data-i18n="priv.s7Li1"><strong>In-App Reset:</strong> You can wipe your save data at any time from the in-game Settings sheet by choosing "Reincarnate / Reset Save".</li>
+            <li data-i18n="priv.s7Li2"><strong>Uninstalling the App:</strong> Deleting the app from your iOS device permanently purges all sandboxed save files, preferences, and local notifications in accordance with standard iOS behavior.</li>
           </ul>
-          <p>
+          <p data-i18n="priv.s7P2">
             Because we do not maintain a cloud database or user registry, there is no remote copy of your save data to delete or recover.
           </p>
         </section>
 
         <section id="children">
           <span class="section-number">08</span>
-          <h2>Children’s Privacy</h2>
-          <p>
-            The game does not collect personal identifiable information from any player, including children under the age of 13 (or under applicable age thresholds in other jurisdictions). It is compliant with the Children’s Online Privacy Protection Act (COPPA) and international privacy frameworks.
+          <h2 data-i18n="priv.s8Title">Children’s Privacy</h2>
+          <p data-i18n="priv.s8P1">
+            The game does not collect personal identifiable information from any player, including children under the age of 13. It is compliant with COPPA and international privacy frameworks.
           </p>
         </section>
 
         <section id="changes">
           <span class="section-number">09</span>
-          <h2>Changes to This Policy</h2>
-          <p>
+          <h2 data-i18n="priv.s9Title">Changes to This Policy</h2>
+          <p data-i18n="priv.s9P1">
             Should future updates introduce cloud synchronization or optional online community features, this privacy policy will be updated prior to any data collection, and notice will be presented within the application.
           </p>
         </section>
 
         <section id="contact">
           <span class="section-number">10</span>
-          <h2>Contact & Support</h2>
-          <p>
+          <h2 data-i18n="priv.s10Title">Contact &amp; Support</h2>
+          <p data-i18n="priv.s10P1">
             If you have questions, feedback, or concerns regarding this privacy policy or the application’s data practices, please open a public inquiry on GitHub:
           </p>
           <p>
-            <a class="button button-primary" href="https://github.com/liuyang1520/chronicles-of-the-ethereal-ruins-site/issues/new" style="margin-top: 12px;">Open an Issue on GitHub</a>
+            <a class="button button-primary" href="https://github.com/liuyang1520/chronicles-of-the-ethereal-ruins-site/issues/new" style="margin-top: 12px;" data-i18n="priv.s10Btn">Open an Issue on GitHub</a>
           </p>
         </section>
       </article>
@@ -184,15 +198,30 @@
     <div class="footer-inner">
       <a class="brand footer-brand" href="../">
         <img class="brand-icon" src="../assets/icon-1024.png" alt="" width="32" height="32">
-        <span class="brand-en">Chronicles of the Ethereal Ruins</span>
+        <span class="brand-en" data-i18n="brand.en">Chronicles of the Ethereal Ruins</span>
       </a>
-      <p>© 2026 Chronicles of the Ethereal Ruins. All rights reserved.</p>
+      <p data-i18n="footer.rights">© 2026 Chronicles of the Ethereal Ruins. All rights reserved.</p>
       <nav aria-label="Footer navigation">
-        <a href="./" aria-current="page">Privacy</a>
-        <a href="../support/">Support</a>
-        <a href="https://github.com/liuyang1520/chronicles-of-the-ethereal-ruins-site">Repository</a>
+        <a href="./" aria-current="page" data-i18n="nav.privacy">Privacy</a>
+        <a href="../support/" data-i18n="nav.support">Support</a>
+        <a href="https://github.com/liuyang1520/chronicles-of-the-ethereal-ruins-site" data-i18n="nav.github">Repository</a>
       </nav>
+      <div class="site-controls">
+        <button class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">
+          <span class="theme-icon" aria-hidden="true">☀️</span>
+        </button>
+        <select class="lang-select" aria-label="Select language">
+          <option value="en">English</option>
+          <option value="zh-CN">简体中文</option>
+          <option value="zh-TW">繁體中文</option>
+          <option value="ja">日本語</option>
+          <option value="ko">한국어</option>
+          <option value="es">Español</option>
+        </select>
+      </div>
     </div>
   </footer>
+
+  <script src="../assets/site.js"></script>
 </body>
 </html>

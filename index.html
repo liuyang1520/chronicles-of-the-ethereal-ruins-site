@@ -14,6 +14,7 @@
   <link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="stylesheet" href="assets/styles.css">
+  <script>(function(){const t=localStorage.getItem('xianxia_theme')||(window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);})();</script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -22,17 +23,30 @@
     <a class="brand" href="./" aria-label="Chronicles of the Ethereal Ruins Home">
       <img class="brand-icon" src="assets/icon-1024.png" alt="" width="42" height="42">
       <div class="brand-text">
-        <span class="brand-en">Chronicles of the Ethereal Ruins</span>
-        <span class="brand-zh">灵墟纪 · 东方修仙模拟器</span>
+        <span class="brand-en" data-i18n="brand.en">Chronicles of the Ethereal Ruins</span>
+        <span class="brand-zh" data-i18n="brand.zh">灵墟纪 · 东方修仙模拟器</span>
       </div>
     </a>
     <nav aria-label="Primary navigation">
-      <a href="#cultivation">Cultivation</a>
-      <a href="#realms">Realms</a>
-      <a href="#languages">Languages</a>
-      <a href="privacy/">Privacy</a>
-      <a href="support/">Support</a>
+      <a href="#cultivation" data-i18n="nav.cultivation">Cultivation</a>
+      <a href="#realms" data-i18n="nav.realms">Realms</a>
+      <a href="#languages" data-i18n="nav.languages">Languages</a>
+      <a href="privacy/" data-i18n="nav.privacy">Privacy</a>
+      <a href="support/" data-i18n="nav.support">Support</a>
     </nav>
+    <div class="site-controls">
+      <button class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">
+        <span class="theme-icon" aria-hidden="true">☀️</span>
+      </button>
+      <select class="lang-select" aria-label="Select language">
+        <option value="en">English</option>
+        <option value="zh-CN">简体中文</option>
+        <option value="zh-TW">繁體中文</option>
+        <option value="ja">日本語</option>
+        <option value="ko">한국어</option>
+        <option value="es">Español</option>
+      </select>
+    </div>
   </header>
 
   <main id="main">
@@ -40,48 +54,48 @@
       <div class="hero-motes" aria-hidden="true"></div>
       <div class="hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow">A MINIMALIST INK XIANXIA SIMULATOR</p>
-          <h1>Seek the Dao.<br>Endure the Tribulation.<br><span>Ascend Beyond.</span></h1>
-          <p class="lede">
+          <p class="eyebrow" data-i18n="hero.eyebrow">A MINIMALIST INK XIANXIA SIMULATOR</p>
+          <h1 data-i18n-html="hero.h1">Seek the Dao.<br>Endure the Tribulation.<br><span>Ascend Beyond.</span></h1>
+          <p class="lede" data-i18n="hero.lede">
             Wake within a secluded mountain sanctum. Gather spiritual Qi in rhythm with real-time breathing.
             Inscribe talismans, forge flying blades, explore ancient ruins, and transcend mortal limits.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#cultivation">EXPLORE THE CODEX</a>
-            <a class="button button-secondary" href="support/">GET SUPPORT</a>
+            <a class="button button-primary" href="#cultivation" data-i18n="hero.ctaCodex">EXPLORE THE CODEX</a>
+            <a class="button button-secondary" href="support/" data-i18n="hero.ctaSupport">GET SUPPORT</a>
           </div>
         </div>
 
         <figure class="app-instrument">
           <div class="instrument-label">
-            <span>VESSEL · CULTIVATION CORE</span>
-            <strong>QI REFINEMENT IX</strong>
+            <span data-i18n="vessel.label">VESSEL · CULTIVATION CORE</span>
+            <strong data-i18n="vessel.stage">QI REFINEMENT IX</strong>
           </div>
           <div class="instrument-image-wrap">
             <img src="assets/app-preview.jpg" alt="Chronicles of the Ethereal Ruins sanctum and cultivation interface" width="1320" height="2868" loading="eager">
-            <span class="instrument-badge">LIVE SIMULATION</span>
+            <span class="instrument-badge" data-i18n="vessel.badge">LIVE SIMULATION</span>
           </div>
           <figcaption>
-            <span><small>DESTINATION</small>QINGYA PEAK</span>
-            <span><small>QI CYCLE</small>CIRCULATING</span>
+            <span><small data-i18n="vessel.destLabel">DESTINATION</small><span data-i18n="vessel.destVal">QINGYA PEAK</span></span>
+            <span><small data-i18n="vessel.cycleLabel">QI CYCLE</small><span data-i18n="vessel.cycleVal">CIRCULATING</span></span>
           </figcaption>
         </figure>
       </div>
     </section>
 
     <section class="readout-strip" aria-label="Game highlights">
-      <div><span class="status-light"></span><div><small>CALENDAR</small><strong>REAL-TIME BREATHING</strong></div></div>
-      <div><span class="status-light"></span><div><small>STORAGE</small><strong>ON-DEVICE SANDBOX</strong></div></div>
-      <div><span class="status-light"></span><div><small>ENGINE</small><strong>OFFLINE-FIRST</strong></div></div>
-      <div><span class="status-light"></span><div><small>TRACKING</small><strong>ZERO / PRIVATE</strong></div></div>
-      <div><span class="status-light"></span><div><small>TRANSLATION</small><strong>6 MAJOR LANGUAGES</strong></div></div>
+      <div><span class="status-light"></span><div><small data-i18n="readout.clockLabel">CALENDAR</small><strong data-i18n="readout.clockVal">REAL-TIME BREATHING</strong></div></div>
+      <div><span class="status-light"></span><div><small data-i18n="readout.storageLabel">STORAGE</small><strong data-i18n="readout.storageVal">ON-DEVICE SANDBOX</strong></div></div>
+      <div><span class="status-light"></span><div><small data-i18n="readout.engineLabel">ENGINE</small><strong data-i18n="readout.engineVal">OFFLINE-FIRST</strong></div></div>
+      <div><span class="status-light"></span><div><small data-i18n="readout.trackLabel">TRACKING</small><strong data-i18n="readout.trackVal">ZERO / PRIVATE</strong></div></div>
+      <div><span class="status-light"></span><div><small data-i18n="readout.langLabel">TRANSLATION</small><strong data-i18n="readout.langVal">6 MAJOR LANGUAGES</strong></div></div>
     </section>
 
     <section class="section parchment-section" id="cultivation">
       <div class="ink-heading">
-        <p class="eyebrow">THE THREE PILLARS</p>
-        <h2>The heavens will not hasten for your ambition.</h2>
-        <p>
+        <p class="eyebrow" data-i18n="pillars.eyebrow">THE THREE PILLARS</p>
+        <h2 data-i18n="pillars.h2">The heavens will not hasten for your ambition.</h2>
+        <p data-i18n="pillars.desc">
           Your journey begins with a breath. Cultivation matures second by second, rewarding quiet discipline over frantic tapping.
           Everything you discover is earned through insight, balance, and patience.
         </p>
@@ -91,8 +105,8 @@
         <article class="chart-card">
           <span class="card-number">01</span>
           <img class="card-image" src="assets/art/cultivator_meditating.jpg" alt="Cultivator meditating quietly in an ink-wash mountain cave" width="800" height="450" loading="lazy">
-          <h3>Solitary Meditation &amp; Tribulation</h3>
-          <p>
+          <h3 data-i18n="card1.title">Solitary Meditation &amp; Tribulation</h3>
+          <p data-i18n="card1.desc">
             Retreat to your quiet sanctum to circulate spiritual Qi. When your meridians brim with power, brave the nine celestial lightning strikes to shatter mortal bottlenecks and break through into higher realms.
           </p>
         </article>
@@ -100,8 +114,8 @@
         <article class="chart-card">
           <span class="card-number">02</span>
           <img class="card-image" src="assets/art/ancient_shanhai_map.jpg" alt="Ancient Shan Hai mountain and sea ink-wash scroll map" width="800" height="450" loading="lazy">
-          <h3>Shanhai Scroll &amp; Five Realms</h3>
-          <p>
+          <h3 data-i18n="card2.title">Shanhai Scroll &amp; Five Realms</h3>
+          <p data-i18n="card2.desc">
             Journey from the misty bamboo groves of Qingya Peak to the tidal archipelagos of the Lan Sea, the frozen swords of the Northern Wastes, the violet mists of Yunmeng Marsh, and the celestial debris of the Ethereal Ruins.
           </p>
         </article>
@@ -109,8 +123,8 @@
         <article class="chart-card">
           <span class="card-number">03</span>
           <img class="card-image" src="assets/art/sword_terrace.jpg" alt="Ancient sword forging terrace and alchemy chamber" width="800" height="450" loading="lazy">
-          <h3>Artisan Forge &amp; Pill Alchemy</h3>
-          <p>
+          <h3 data-i18n="card3.title">Artisan Forge &amp; Pill Alchemy</h3>
+          <p data-i18n="card3.desc">
             Gather wild Dew Grass and Moon Leaves to simmer restorative pills in bronze cauldrons. Refine spiritual ore at the Sword Terrace to forge flying blades inscribed with ancient golden seals.
           </p>
         </article>
@@ -120,47 +134,47 @@
     <section class="section night-section" id="realms">
       <div class="split-layout">
         <div class="panel-copy">
-          <p class="eyebrow eyebrow-jade">MARTIAL DAO &amp; ARTIFACTS</p>
-          <h2>A living Xianxia simulator written in ink.</h2>
-          <p>
+          <p class="eyebrow eyebrow-jade" data-i18n="systems.eyebrow">MARTIAL DAO &amp; ARTIFACTS</p>
+          <h2 data-i18n="systems.h2">A living Xianxia simulator written in ink.</h2>
+          <p data-i18n="systems.p1">
             Engage in tactical turn-based ink duels governed by the Five Elements (Metal, Wood, Water, Fire, Earth). Encounter traveling immortals, debate spiritual philosophies, and inspect interactive 3D sacred treasures recovered from ancient ruins.
           </p>
-          <p>
+          <p data-i18n="systems.p2">
             Every encounter is narrated through poetic brushwork and accompanied by real-time acoustic Guqin plucks, temple bells, and the whispering rain of ancient shrines.
           </p>
         </div>
 
         <div class="instrument-panel" aria-label="Game systems">
           <div class="panel-title">
-            <span>CORE SYSTEMS</span>
-            <span>OPERATIONAL</span>
+            <span data-i18n="systems.header">CORE SYSTEMS</span>
+            <span data-i18n="systems.status">OPERATIONAL</span>
           </div>
           <div class="panel-row">
             <span class="panel-index">01</span>
             <span>
-              <strong>FIVE ELEMENTS INK COMBAT</strong>
-              <small>TACTICAL ATTACKS, PARRYING, &amp; BURST SPELLS</small>
+              <strong data-i18n="sys1.title">FIVE ELEMENTS INK COMBAT</strong>
+              <small data-i18n="sys1.desc">TACTICAL ATTACKS, PARRYING, &amp; BURST SPELLS</small>
             </span>
           </div>
           <div class="panel-row">
             <span class="panel-index">02</span>
             <span>
-              <strong>3D SACRED RELIC VIEWER</strong>
-              <small>INSPECT ANCIENT CAULDRONS, BELLS, &amp; STELES</small>
+              <strong data-i18n="sys2.title">3D SACRED RELIC VIEWER</strong>
+              <small data-i18n="sys2.desc">INSPECT ANCIENT CAULDRONS, BELLS, &amp; STELES</small>
             </span>
           </div>
           <div class="panel-row">
             <span class="panel-index">03</span>
             <span>
-              <strong>BRANCHING DESTINY CODEX</strong>
-              <small>100+ PROCEDURAL ENCOUNTERS &amp; SECT TASKS</small>
+              <strong data-i18n="sys3.title">BRANCHING DESTINY CODEX</strong>
+              <small data-i18n="sys3.desc">100+ PROCEDURAL ENCOUNTERS &amp; SECT TASKS</small>
             </span>
           </div>
           <div class="panel-row">
             <span class="panel-index">04</span>
             <span>
-              <strong>PROCEDURAL ACOUSTIC ENGINE</strong>
-              <small>WEB AUDIO GUQIN, BRONZE BELLS, &amp; RAIN SOUNDSCAPES</small>
+              <strong data-i18n="sys4.title">PROCEDURAL ACOUSTIC ENGINE</strong>
+              <small data-i18n="sys4.desc">WEB AUDIO GUQIN, BRONZE BELLS, &amp; RAIN SOUNDSCAPES</small>
             </span>
           </div>
         </div>
@@ -170,9 +184,9 @@
     <section class="section languages-section" id="languages">
       <div class="section-inner">
         <div class="ink-heading" style="margin-bottom: 24px;">
-          <p class="eyebrow">GLOBAL LOCALIZATION</p>
-          <h2 style="color: var(--gold-bright);">Cultivate in your tongue across 6 major languages.</h2>
-          <p style="color: var(--text-dim); max-width: 680px; margin: 0 auto;">
+          <p class="eyebrow" data-i18n="langSec.eyebrow">GLOBAL LOCALIZATION</p>
+          <h2 style="color: var(--gold-bright);" data-i18n="langSec.h2">Cultivate in your tongue across 6 major languages.</h2>
+          <p style="color: var(--text-dim); max-width: 680px; margin: 0 auto;" data-i18n="langSec.desc">
             Every term, sutra, and notification has been faithfully adapted to preserve authentic Eastern aesthetics and literary depth.
           </p>
         </div>
@@ -238,16 +252,16 @@
     <section class="section">
       <div class="privacy-callout">
         <div>
-          <p class="eyebrow">PRIVATE BY DESIGN</p>
-          <h2>The mountain mist is quiet.<br>Your data stays on your device.</h2>
+          <p class="eyebrow" data-i18n="privCallout.eyebrow">PRIVATE BY DESIGN</p>
+          <h2 data-i18n-html="privCallout.h2">The mountain mist is quiet.<br>Your data stays on your device.</h2>
         </div>
         <div>
-          <p>
+          <p data-i18n="privCallout.desc">
             Chronicles of the Ethereal Ruins has no user accounts, no telemetry, no ad networks, and no trackers.
             Your cultivation state, forged items, and preferences reside solely within your device's sandboxed local container.
             Completion alerts are scheduled locally—there is no cloud server observing your passage.
           </p>
-          <a class="text-link" href="privacy/">READ THE PRIVACY POLICY <span>→</span></a>
+          <a class="text-link" href="privacy/" data-i18n="privCallout.link">READ THE PRIVACY POLICY →</a>
         </div>
       </div>
     </section>
@@ -262,12 +276,12 @@
             <circle cx="12" cy="17" r="1" fill="currentColor"></circle>
           </svg>
         </div>
-        <p class="eyebrow">BEGIN YOUR CULTIVATION</p>
-        <h2>The Ascension Dais beckons.<br>The rest is your Dao.</h2>
-        <p>Designed for iPhone running iOS 15 or later, and modern Web browsers.</p>
+        <p class="eyebrow" data-i18n="cta.eyebrow">BEGIN YOUR CULTIVATION</p>
+        <h2 data-i18n-html="cta.h2">The Ascension Dais beckons.<br>The rest is your Dao.</h2>
+        <p data-i18n="cta.desc">Designed for iPhone running iOS 15 or later, and modern Web browsers.</p>
         <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
-          <a class="button button-primary" href="support/">VISIT SUPPORT</a>
-          <a class="button button-secondary" href="https://github.com/liuyang1520/chronicles-of-the-ethereal-ruins-site" target="_blank" rel="noopener noreferrer">VIEW ON GITHUB</a>
+          <a class="button button-primary" href="support/" data-i18n="cta.btnSupport">VISIT SUPPORT</a>
+          <a class="button button-secondary" href="https://github.com/liuyang1520/chronicles-of-the-ethereal-ruins-site" target="_blank" rel="noopener noreferrer" data-i18n="cta.btnGithub">VIEW ON GITHUB</a>
         </div>
       </div>
     </section>
@@ -277,16 +291,31 @@
     <div class="footer-inner">
       <a class="brand footer-brand" href="./">
         <img class="brand-icon" src="assets/icon-1024.png" alt="" width="32" height="32">
-        <span class="brand-en">Chronicles of the Ethereal Ruins</span>
+        <span class="brand-en" data-i18n="brand.en">Chronicles of the Ethereal Ruins</span>
       </a>
-      <p>© 2026 Chronicles of the Ethereal Ruins. All rights reserved.</p>
+      <p data-i18n="footer.rights">© 2026 Chronicles of the Ethereal Ruins. All rights reserved.</p>
       <nav aria-label="Footer navigation">
-        <a href="privacy/">Privacy</a>
-        <a href="support/">Support</a>
-        <a href="https://github.com/liuyang1520/chronicles-of-the-ethereal-ruins-site">GitHub</a>
-        <a href="https://github.com/liuyang1520/chronicles-of-the-ethereal-ruins-site/issues/new">Issues</a>
+        <a href="privacy/" data-i18n="nav.privacy">Privacy</a>
+        <a href="support/" data-i18n="nav.support">Support</a>
+        <a href="https://github.com/liuyang1520/chronicles-of-the-ethereal-ruins-site" data-i18n="nav.github">GitHub</a>
+        <a href="https://github.com/liuyang1520/chronicles-of-the-ethereal-ruins-site/issues/new" data-i18n="nav.issues">Issues</a>
       </nav>
+      <div class="site-controls">
+        <button class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">
+          <span class="theme-icon" aria-hidden="true">☀️</span>
+        </button>
+        <select class="lang-select" aria-label="Select language">
+          <option value="en">English</option>
+          <option value="zh-CN">简体中文</option>
+          <option value="zh-TW">繁體中文</option>
+          <option value="ja">日本語</option>
+          <option value="ko">한국어</option>
+          <option value="es">Español</option>
+        </select>
+      </div>
     </div>
   </footer>
+
+  <script src="assets/site.js"></script>
 </body>
 </html>

@@ -9,6 +9,7 @@
   <link rel="icon" href="../assets/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
   <link rel="stylesheet" href="../assets/styles.css">
+  <script>(function(){const t=localStorage.getItem('xianxia_theme')||(window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);})();</script>
 </head>
 <body class="support-page">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -17,54 +18,64 @@
     <a class="brand" href="../" aria-label="Chronicles of the Ethereal Ruins Home">
       <img class="brand-icon" src="../assets/icon-1024.png" alt="" width="42" height="42">
       <div class="brand-text">
-        <span class="brand-en">Chronicles of the Ethereal Ruins</span>
-        <span class="brand-zh">灵墟纪 · 东方修仙模拟器</span>
+        <span class="brand-en" data-i18n="brand.en">Chronicles of the Ethereal Ruins</span>
+        <span class="brand-zh" data-i18n="brand.zh">灵墟纪 · 东方修仙模拟器</span>
       </div>
     </a>
     <nav aria-label="Primary navigation">
-      <a href="../#cultivation">Cultivation</a>
-      <a href="../#realms">Realms</a>
-      <a href="../#languages">Languages</a>
-      <a href="../privacy/">Privacy</a>
-      <a href="./" aria-current="page">Support</a>
+      <a href="../#cultivation" data-i18n="nav.cultivation">Cultivation</a>
+      <a href="../#realms" data-i18n="nav.realms">Realms</a>
+      <a href="../#languages" data-i18n="nav.languages">Languages</a>
+      <a href="../privacy/" data-i18n="nav.privacy">Privacy</a>
+      <a href="./" aria-current="page" data-i18n="nav.support">Support</a>
     </nav>
+    <div class="site-controls">
+      <button class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">
+        <span class="theme-icon" aria-hidden="true">☀️</span>
+      </button>
+      <select class="lang-select" aria-label="Select language">
+        <option value="en">English</option>
+        <option value="zh-CN">简体中文</option>
+        <option value="zh-TW">繁體中文</option>
+        <option value="ja">日本語</option>
+        <option value="ko">한국어</option>
+        <option value="es">Español</option>
+      </select>
+    </div>
   </header>
 
   <main id="main">
     <header class="support-hero">
       <div>
-        <p class="eyebrow">SANCTUM BEACON · CULTIVATION ARCHIVES</p>
-        <h1>How can we assist your Dao journey?</h1>
-        <p>
+        <p class="eyebrow" data-i18n="support.heroEyebrow">SANCTUM BEACON · CULTIVATION ARCHIVES</p>
+        <h1 data-i18n="support.heroH1">How can we assist your Dao journey?</h1>
+        <p data-i18n="support.heroP">
           Consult the cultivator guidelines below. If your inquiry remains unresolved, send a support signal via GitHub Issues and provide details of what occurred.
         </p>
       </div>
       <div class="signal-card">
         <span class="signal-pulse" aria-hidden="true"></span>
-        <small>STATION STATUS</small>
-        <strong>RECEIVING</strong>
-        <p>Chronicles of the Ethereal Ruins 1.0 · iOS 15+ &amp; Web</p>
+        <small data-i18n="support.statusLabel">STATION STATUS</small>
+        <strong data-i18n="support.statusVal">RECEIVING</strong>
+        <p data-i18n="support.statusDesc">Chronicles of the Ethereal Ruins 1.0 · iOS 15+ &amp; Web</p>
       </div>
     </header>
 
     <section class="support-content">
       <div class="section-heading">
-        <p class="eyebrow eyebrow-jade">DAOIST COMPENDIUM</p>
-        <h2>Frequently asked questions</h2>
+        <p class="eyebrow eyebrow-jade" data-i18n="support.compendiumEyebrow">DAOIST COMPENDIUM</p>
+        <h2 data-i18n="support.compendiumH2">Frequently asked questions</h2>
       </div>
 
       <div class="faq-list">
         <details>
           <summary>
             <span class="faq-number">01</span>
-            <span>How do I begin cultivation and break through?</span>
+            <span data-i18n="faq.q1">How do I begin cultivation and break through?</span>
           </summary>
           <div class="answer">
-            <p>
-              When you first awaken in your mountain sanctum, select <strong>Meditate</strong> (入定修炼) to begin gathering spiritual Qi. Cultivation progresses in real time, even while the game is closed.
-            </p>
-            <p>
-              Once your Qi reservoir reaches the required threshold, return to your sanctum and choose <strong>Break Through</strong> (尝试破境). Weathering the heavenly tribulation advances your realm (e.g. from Qi Refinement to Foundation Establishment) and unlocks new mystic techniques and regions.
+            <p data-i18n="faq.a1">
+              When you first awaken in your mountain sanctum, select Meditate (入定修炼) to begin gathering spiritual Qi. Cultivation progresses in real time, even while the game is closed. Once your Qi reservoir reaches the required threshold, return to your sanctum and choose Break Through (尝试破境). Weathering the heavenly tribulation advances your realm and unlocks new mystic techniques and regions.
             </p>
           </div>
         </details>
@@ -72,28 +83,23 @@
         <details>
           <summary>
             <span class="faq-number">02</span>
-            <span>Why am I not receiving cultivation notifications?</span>
+            <span data-i18n="faq.q2">Why am I not receiving cultivation notifications?</span>
           </summary>
           <div class="answer">
-            <p>
-              Chronicles of the Ethereal Ruins schedules notifications strictly on your local device. To ensure alerts arrive reliably:
+            <p data-i18n="faq.a2">
+              Chronicles of the Ethereal Ruins schedules notifications strictly on your local device. In iOS Settings, choose 灵墟纪 (Chronicles of the Ethereal Ruins), select Notifications, and ensure Allow Notifications is enabled. Inside the game, open the Settings sheet (gear icon) and verify Completion Alerts are enabled.
             </p>
-            <ol>
-              <li>Open iOS <strong>Settings</strong>, scroll down to <strong>灵墟纪</strong> (or <em>Chronicles of the Ethereal Ruins</em>), and select <strong>Notifications</strong>.</li>
-              <li>Ensure <strong>Allow Notifications</strong> is toggled on, along with Banner and Lock Screen alerts.</li>
-              <li>Inside the game, open the <strong>Settings</strong> sheet (gear icon) and verify that <strong>Completion Alerts</strong> are enabled.</li>
-            </ol>
           </div>
         </details>
 
         <details>
           <summary>
             <span class="faq-number">03</span>
-            <span>Does the game require an internet connection?</span>
+            <span data-i18n="faq.q3">Does the game require an internet connection?</span>
           </summary>
           <div class="answer">
-            <p>
-              No. <em>Chronicles of the Ethereal Ruins</em> is an offline-first experience. All simulation algorithms, story branches, artisan recipes, 3D relic visualizers, and procedural audio run entirely locally on your device. You can cultivate atop real mountain summits or in airplane mode without any loss of functionality.
+            <p data-i18n="faq.a3">
+              No. Chronicles of the Ethereal Ruins is an offline-first experience. All simulation algorithms, story branches, artisan recipes, 3D relic visualizers, and procedural audio run entirely locally on your device. You can cultivate atop real mountain summits or in airplane mode without any loss of functionality.
             </p>
           </div>
         </details>
@@ -101,22 +107,11 @@
         <details>
           <summary>
             <span class="faq-number">04</span>
-            <span>Which languages are supported?</span>
+            <span data-i18n="faq.q4">Which languages are supported?</span>
           </summary>
           <div class="answer">
-            <p>
-              The game provides verified localization across <strong>6 major languages</strong>:
-            </p>
-            <ul>
-              <li><strong>English:</strong> Chronicles of the Ethereal Ruins</li>
-              <li><strong>Simplified Chinese (简体中文):</strong> 灵墟纪</li>
-              <li><strong>Traditional Chinese (繁體中文):</strong> 靈墟紀</li>
-              <li><strong>Japanese (日本語):</strong> 霊墟紀 (れいきょき)</li>
-              <li><strong>Korean (한국어):</strong> 영허기</li>
-              <li><strong>Spanish (Español):</strong> Crónicas de las Ruinas Etéreas</li>
-            </ul>
-            <p>
-              You can switch your preferred language at any time in the in-game Settings sheet.
+            <p data-i18n="faq.a4">
+              The game provides verified localization across 6 major languages: English, Simplified Chinese (简体中文), Traditional Chinese (繁體中文), Japanese (日本語), Korean (한국어), and Spanish (Español). You can switch your preferred language at any time in the in-game Settings sheet.
             </p>
           </div>
         </details>
@@ -124,14 +119,11 @@
         <details>
           <summary>
             <span class="faq-number">05</span>
-            <span>How does the sound and audio engine work?</span>
+            <span data-i18n="faq.q5">How does the sound and audio engine work?</span>
           </summary>
           <div class="answer">
-            <p>
-              The game features a procedural Web Audio acoustic synthesizer reproducing ancient Guqin string plucks, bronze bells, sword strikes, and ambient rainfall without requiring large audio downloads.
-            </p>
-            <p>
-              The audio engine respects your device's hardware Silent Mode switch. If you hear no sound, confirm your device is unmuted, or toggle the Sound option in the in-game Settings menu.
+            <p data-i18n="faq.a5">
+              The game features a procedural Web Audio acoustic synthesizer reproducing ancient Guqin string plucks, bronze bells, sword strikes, and ambient rainfall without requiring large audio downloads. It respects your device's hardware Silent Mode switch.
             </p>
           </div>
         </details>
@@ -139,14 +131,11 @@
         <details>
           <summary>
             <span class="faq-number">06</span>
-            <span>How do I forge blades and craft alchemy pills?</span>
+            <span data-i18n="faq.q6">How do I forge blades and craft alchemy pills?</span>
           </summary>
           <div class="answer">
-            <p>
-              After reaching Qi Refinement Stage 4, you can visit the <strong>Sect</strong> tab. The <strong>Alchemy Chamber</strong> allows you to combine spiritual herbs (such as Dew Grass and Moon Petals) into restorative pills.
-            </p>
-            <p>
-              At the <strong>Sword Terrace</strong>, you can refine spiritual ore (such as Red Smelt Copper) into personalized flying swords and talisman treasures.
+            <p data-i18n="faq.a6">
+              After reaching Qi Refinement Stage 4, you can visit the Sect tab. The Alchemy Chamber allows you to combine spiritual herbs into restorative pills, and the Sword Terrace enables refining ore into personalized flying swords and talisman treasures.
             </p>
           </div>
         </details>
@@ -154,14 +143,11 @@
         <details>
           <summary>
             <span class="faq-number">07</span>
-            <span>How do I backup, restore, or erase my progress?</span>
+            <span data-i18n="faq.q7">How do I backup, restore, or erase my progress?</span>
           </summary>
           <div class="answer">
-            <p>
-              Save data is kept in your device's private sandboxed storage. If you perform a full iOS backup (via iCloud or Mac), your game save is included as part of standard device backup.
-            </p>
-            <p>
-              If you wish to reincarnate and start fresh, open the in-game Settings sheet and choose <strong>Reincarnate / Reset Save</strong>. Deleting the app from your device also wipes local save data.
+            <p data-i18n="faq.a7">
+              Save data is kept in your device's private sandboxed storage and is included in standard iOS device backups. To start fresh, open the in-game Settings sheet and choose Reincarnate / Reset Save. Deleting the app also wipes local save data.
             </p>
           </div>
         </details>
@@ -169,11 +155,11 @@
         <details>
           <summary>
             <span class="faq-number">08</span>
-            <span>Which iOS devices and platforms are supported?</span>
+            <span data-i18n="faq.q8">Which iOS devices and platforms are supported?</span>
           </summary>
           <div class="answer">
-            <p>
-              The native iOS application supports all iPhone models running <strong>iOS 15 or later</strong>. The Web edition is fully compatible with modern versions of Safari, Chrome, Firefox, and Edge.
+            <p data-i18n="faq.a8">
+              The native iOS application supports all iPhone models running iOS 15 or later. The Web edition is fully compatible with modern versions of Safari, Chrome, Firefox, and Edge.
             </p>
           </div>
         </details>
@@ -182,17 +168,17 @@
 
     <section class="contact-section">
       <div>
-        <p class="eyebrow">STILL ENCOUNTERING TROUBLE?</p>
-        <h2>Send a support signal.</h2>
-        <p>
-          When reporting an issue, please describe your device model, iOS/browser version, what you expected to happen, and what occurred. Support requests are handled through our public GitHub repository. Please do not submit confidential or sensitive personal information.
+        <p class="eyebrow" data-i18n="support.contactEyebrow">STILL ENCOUNTERING TROUBLE?</p>
+        <h2 data-i18n="support.contactH2">Send a support signal.</h2>
+        <p data-i18n="support.contactP">
+          When reporting an issue, please describe your device model, iOS/browser version, what you expected to happen, and what occurred. Support requests are handled through our public GitHub repository. Please do not submit confidential personal information.
         </p>
       </div>
       <div class="contact-panel">
-        <small>COMMUNICATION CHANNEL</small>
-        <strong>GITHUB SUPPORT</strong>
-        <a class="button button-primary" href="https://github.com/liuyang1520/chronicles-of-the-ethereal-ruins-site/issues/new" target="_blank" rel="noopener noreferrer">OPEN A SUPPORT REQUEST</a>
-        <a class="text-link light-link" href="https://github.com/liuyang1520/chronicles-of-the-ethereal-ruins-site" target="_blank" rel="noopener noreferrer">VIEW REPOSITORY <span>→</span></a>
+        <small data-i18n="support.contactChannel">COMMUNICATION CHANNEL</small>
+        <strong data-i18n="support.contactTitle">GITHUB SUPPORT</strong>
+        <a class="button button-primary" href="https://github.com/liuyang1520/chronicles-of-the-ethereal-ruins-site/issues/new" target="_blank" rel="noopener noreferrer" data-i18n="support.openBtn">OPEN A SUPPORT REQUEST</a>
+        <a class="text-link light-link" href="https://github.com/liuyang1520/chronicles-of-the-ethereal-ruins-site" target="_blank" rel="noopener noreferrer" data-i18n="support.repoBtn">VIEW REPOSITORY →</a>
       </div>
     </section>
   </main>
@@ -201,15 +187,30 @@
     <div class="footer-inner">
       <a class="brand footer-brand" href="../">
         <img class="brand-icon" src="../assets/icon-1024.png" alt="" width="32" height="32">
-        <span class="brand-en">Chronicles of the Ethereal Ruins</span>
+        <span class="brand-en" data-i18n="brand.en">Chronicles of the Ethereal Ruins</span>
       </a>
-      <p>© 2026 Chronicles of the Ethereal Ruins. All rights reserved.</p>
+      <p data-i18n="footer.rights">© 2026 Chronicles of the Ethereal Ruins. All rights reserved.</p>
       <nav aria-label="Footer navigation">
-        <a href="../privacy/">Privacy</a>
-        <a href="./" aria-current="page">Support</a>
-        <a href="https://github.com/liuyang1520/chronicles-of-the-ethereal-ruins-site">Repository</a>
+        <a href="../privacy/" data-i18n="nav.privacy">Privacy</a>
+        <a href="./" aria-current="page" data-i18n="nav.support">Support</a>
+        <a href="https://github.com/liuyang1520/chronicles-of-the-ethereal-ruins-site" data-i18n="nav.github">Repository</a>
       </nav>
+      <div class="site-controls">
+        <button class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">
+          <span class="theme-icon" aria-hidden="true">☀️</span>
+        </button>
+        <select class="lang-select" aria-label="Select language">
+          <option value="en">English</option>
+          <option value="zh-CN">简体中文</option>
+          <option value="zh-TW">繁體中文</option>
+          <option value="ja">日本語</option>
+          <option value="ko">한국어</option>
+          <option value="es">Español</option>
+        </select>
+      </div>
     </div>
   </footer>
+
+  <script src="../assets/site.js"></script>
 </body>
 </html>
