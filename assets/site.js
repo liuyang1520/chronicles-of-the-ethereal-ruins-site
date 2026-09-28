@@ -92,8 +92,8 @@
       'sys2.desc': 'INSPECT ANCIENT CAULDRONS, BELLS, & STELES',
       'sys3.title': 'BRANCHING DESTINY CODEX',
       'sys3.desc': '100+ PROCEDURAL ENCOUNTERS & SECT TASKS',
-      'sys4.title': 'PROCEDURAL ACOUSTIC ENGINE',
-      'sys4.desc': 'WEB AUDIO GUQIN, BRONZE BELLS, & RAIN SOUNDSCAPES',
+      'sys4.title': '12-SCENE SOUNDTRACK & ACOUSTICS',
+      'sys4.desc': 'PURE INSTRUMENTAL BGM, GUQIN, CHIMES, & RAIN SOUNDSCAPES',
 
       // Languages Section
       'langSec.eyebrow': 'GLOBAL LOCALIZATION',
@@ -134,7 +134,7 @@
       'faq.q4': 'Which languages are supported?',
       'faq.a4': 'The game provides verified localization across 6 major languages: English, Simplified Chinese (简体中文), Traditional Chinese (繁體中文), Japanese (日本語), Korean (한국어), and Spanish (Español). You can switch your preferred language at any time in the in-game Settings sheet.',
       'faq.q5': 'How does the sound and audio engine work?',
-      'faq.a5': 'The game features a procedural Web Audio acoustic synthesizer reproducing ancient Guqin string plucks, bronze bells, sword strikes, and ambient rainfall without requiring large audio downloads. It respects your device\'s hardware Silent Mode switch.',
+      'faq.a5': 'The game features a curated 12-scene Eastern Xianxia instrumental soundtrack seamlessly adapting to your current exploration realm and battles, alongside a procedural Web Audio acoustic synthesizer. Audio respects your device\'s hardware Silent Mode switch and can be toggled or adjusted in Settings.',
       'faq.q6': 'How do I forge blades and craft alchemy pills?',
       'faq.a6': 'After reaching Qi Refinement Stage 4, you can visit the Sect tab. The Alchemy Chamber allows you to combine spiritual herbs into restorative pills, and the Sword Terrace enables refining ore into personalized flying swords and talisman treasures.',
       'faq.q7': 'How do I backup, restore, or erase my progress?',
@@ -271,8 +271,8 @@
       'sys2.desc': '上古铜鼎 · 传世玉磬 · 铭文飞剑',
       'sys3.title': '百卷因果命途',
       'sys3.desc': '百余种机缘奇遇 · 宗门差遣任务',
-      'sys4.title': '代码声学引擎',
-      'sys4.desc': '古琴泛音 · 铜磬长鸣 · 细雨润物',
+      'sys4.title': '十二仙境原声与声学',
+      'sys4.desc': '全篇纯器乐仙侠背景乐 · 古琴编钟 · 法术音效',
 
       // Languages Section
       'langSec.eyebrow': '多语言覆盖',
@@ -313,7 +313,7 @@
       'faq.q4': '支持哪些语言？',
       'faq.a4': '游戏原生完整支持 6 种主流语言：简体中文、繁體中文、英语（English）、日语（日本語）、韩语（한국어）与西班牙语（Español）。道友可在游戏内的「设置」窗口随时无缝切换。',
       'faq.q5': '游戏的声音与音效机制是怎样的？',
-      'faq.a5': '游戏采用纯代码驱动的 Web Audio 物理声学波形合成引擎，模拟出古琴散音、泛音、青铜磬响与细雨声，无需下载沉重的音频素材。游戏完全遵循 iOS 静音键规则，静音时保持沉静。',
+      'faq.a5': '游戏内置十二仙境全篇纯器乐东方原声（古琴、洞箫、古筝、编钟与琵琶）与 Web Audio 物理声学法术音效引擎，支持随境漫游与平滑音景转换。游戏完全遵循设备静音键规则，随时可在「设置」中开关与调节音量。',
       'faq.q6': '如何铸炼飞剑与配制丹药？',
       'faq.a6': '境界达到炼气期第四层后，前往「山门」界面的「炼丹房」与「铸剑台」。采摘收集的灵药可在丹炉中精炼，开采的地火铜矿可在剑台铭刻符箓铸成法剑。',
       'faq.q7': '如何备份、转移或清除游戏存档？',
